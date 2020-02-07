@@ -10,18 +10,21 @@
 <body>
     <div class="container">
         <h1 class="center">Alura Typer</h1>
-        <p class="frase">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+        <p class="frase center">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
 
         <ul class="informacoes center">
             <li>
                 <i class="small material-icons icones">description</i>
-                <span id="tamanho-frase">19</span> palavras
+                <span id="tamanho-frase">5</span> palavras
             </li>
             <li>
                 <i class="small material-icons icones">query_builder</i>
-                <span id="tempo-digitacao">15</span> segundos
+                <span id="tempo-digitacao">2</span> segundos
             </li>
         </ul>
+
+        <label class="nome-competidor" for="name">Insira seu nome com no mínimo 3 letras</label>
+        <input id="jogador" name="name" minlength="3" maxlength="110" placeholder="Insira seu nome aqui">
 
         <textarea class="campo-digitacao" rows="8" cols ="40"></textarea>
 
@@ -35,9 +38,26 @@
             <li><span id="contador-caracteres">0</span> caracteres</li>
             <li><span id="contador-palavras">0</span> palavras</li>
         </ul>
+
+        <section class="placar">
+            <h3 class="center">Placar</h3>
+            <table class="centered bordered">
+                <thead>
+                    <tr>
+                        <th>Nome</th>
+                        <th>No. de palavras</th>
+                        <th>Remover</th>
+                    </tr>
+                </thead>
+                <tbody>
+                </tbody>
+            </table>
+        </section>
     </div>
 
     <script src="js/jquery.js"></script>
     <script src="js/main.js"></script>
+    <script src="js/placar.js"></script>
+
 </body>
 </html>
