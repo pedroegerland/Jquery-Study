@@ -39,36 +39,40 @@
 
 }
 
+.botoes{
+    display: inline-block;
+}
+
 #overlay {
     position: absolute; 
-    bottom: 350px;
-    left: 650px;
-    width: 600px;
-    height: 250px;
-    background: rgb(221, 221, 221);
-    opacity: 1;
-    z-index: 2;
-  }
+    bottom: 50%;
+    left: 30%;
+    width: 450px;
+    height: auto;
+    margin: 50px;
+}
 
 #modal {
+    display: block;
     position:absolute;
     background:rgba(0,0,0,0.2);
     border-radius:14px;
     padding:8px;
     margin: 70px 30px 40px 60px;
-  }
-  
+}
+
 #content {
     border-radius:8px;
-    background:#fff;
+    background:rgb(255, 116, 116);
     padding:20px;
     font-size: 24px;
-  }
+}
 
 #close {
-    position: absolute;
-    left: 550px;
-    bottom: 160px;
+    position: relative;
+    float: right;
+    left: 40px;
+    bottom: 40px;
     color: black;
     font-size: 40px;
 }

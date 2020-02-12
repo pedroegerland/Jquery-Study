@@ -9,7 +9,7 @@
 </head>
 <body>
     <div class="container">
-        <h1 class="center">Alura Typer</h1>
+        <h1 class="center">Quem Digita mais rápido?</h1>
         <p class="frase center">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
 
         <ul class="informacoes center">
@@ -27,10 +27,15 @@
         <input id="jogador" name="name" minlength="3" maxlength="110" placeholder="Insira seu nome aqui">
 
         <textarea class="campo-digitacao" rows="8" cols ="40"></textarea>
-
+        
         <div class="botoes">
             <a id="botao-reiniciar" class="btn-floating btn-large waves-effect waves-light red">
                 <i class="material-icons">restore</i>
+            </a>
+        </div>
+        <div class="botoes">
+            <a id="botao-reiniciar" class="btn-floating btn-large waves-effect waves-light red">
+                <i class="material-icons">autorenew</i>
             </a>
         </div>
 
@@ -54,12 +59,11 @@
             </table>
         </section>
     </div>
-    <div id='overlay' class="center .displayNone">
-        <div id='modal'>
-            <div id='content' class="center">O Vencedor deste jogo Foi <strong id="vencedor"></strong> Parabéns!!</div>
-            <a href='#' id='close'>&#88</a>
-        </div>
+    <div id='overlay' class="center displayNone">
+        <a href='principal.html' id='close'>&#88</a>
+        <div id='content' class="center">O Vencedor desta rodada foi <br><strong id="vencedor"></strong></div>
     </div>
+
     <script src="js/jquery.js"></script>
     <script src="js/main.js"></script>
     <script src="js/placar.js"></script>
