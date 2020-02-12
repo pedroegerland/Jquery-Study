@@ -32,12 +32,18 @@ function novaLinha(usuario, palavras) {
 
     colunaRemover.append(link);
 
-    linha.append(colunaUsuario);
-    linha.append(colunaPalavras);
+    linha.addClass("listaJogadores");
+    linha.append(colunaUsuario.addClass("nomeJogador"));
+    linha.append(colunaPalavras.addClass("acharContador"));
     linha.append(colunaRemover);
-
     return linha;
 }
+
+function Ordernar(){
+    $('tbody > tr').sort(function (a, b) {
+        return parseInt($(b).find('td.acharContador').text()) - parseInt($(a).find('td.acharContador').text());
+    }).appendTo('tbody');
+};
 
 function removeLinha() {
     event.preventDefault();

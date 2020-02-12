@@ -64,7 +64,8 @@ function finalizaJogo() {
     campo.attr("disabled", true);
     campo.toggleClass("campo-desativado");
     inserePlacar();
-    Ordenar();
+    Ordernar();
+    verificarVencedor();
 }
 
 function reiniciaJogo() {

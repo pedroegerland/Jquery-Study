@@ -41,8 +41,8 @@
 
         <section class="placar">
             <h3 class="center">Placar</h3>
-            <table class="centered bordered">
-                <thead>
+            <table class="centered bordered" id="player-list">
+                <thead> 
                     <tr>
                         <th>Nome</th>
                         <th>No. de palavras</th>
@@ -54,10 +54,17 @@
             </table>
         </section>
     </div>
-
+    <div id='overlay' class="center .displayNone">
+        <div id='modal'>
+            <div id='content' class="center">O Vencedor deste jogo Foi <strong id="vencedor"></strong> Parabéns!!</div>
+            <a href='#' id='close'>&#88</a>
+        </div>
+    </div>
     <script src="js/jquery.js"></script>
     <script src="js/main.js"></script>
     <script src="js/placar.js"></script>
+    <script src="js/finalizajogo.js"></script>
+
 
 </body>
 </html>
